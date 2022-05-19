@@ -131,15 +131,7 @@ body {
     cursor: pointer;
 }
 
-/* .container{
-    background-color: aqua;
-} */
 
-.container {
-    max-width: 1157px;
-    margin-top: 2%;
-
-}
 
 .grid-container {
     display: grid;
@@ -156,7 +148,7 @@ body {
 
     justify-content: space-between;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 23px;
 
     background: #FFFFFF;
@@ -191,20 +183,32 @@ body {
     margin: -20px;
 }
 
-.dropdown {
+#dropdown, #dropdown-2, #dropdown-3, #dropdown-4, #dropdown-5 {
+    display: none;
+
+    grid-template-columns: 35% 65%;
+
+    align-items: center;
+    justify-content: center;
+    width: 14vw;
+    height: 20vh;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
     position: absolute;
-    cursor: pointer;
-    right: 0;
-    top: 3em;
-    transition: all 0.25s ease-out;
-    transform: scale(0);
-    transform-origin: 100% 0;
 }
 
-.active .dropdown {
-    transform: scale(1);
-    transition: all 0.25s cubic-bezier(.5, 1.8, .9, .8);
+.kebab img{
+    padding-left: 2vw;
 }
+.kebab a{
+    text-decoration: none;
+    color: #000000;
+}
+
 
 /* .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
